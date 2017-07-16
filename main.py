@@ -6,13 +6,15 @@ from HTMLTestRunner import HTMLTestRunner
 #from testcases.login_logout_cases.bugfree_login_or_condition import BugFreeLoginOrCondition
 from testcases.bugfree_import_file import BugfreeImportFile
 from testcases.product_management.product_add import ProductAdd
+from testcases.login_logout_cases.login_logout_test import LoginLogoutTest
 
 def suites():
     suite=unittest.TestSuite()
     loader=unittest.TestLoader()
     #suite.addTests(loader.loadTestsFromTestCase(BugFreeLoginOrCondition))
     #suite.addTests(loader.loadTestsFromTestCase(BugfreeImportFile))
-    suite.addTests(loader.loadTestsFromTestCase(ProductAdd))
+    # suite.addTests(loader.loadTestsFromTestCase(ProductAdd))
+    suite.addTests(loader.loadTestsFromTestCase(LoginLogoutTest))
     return suite
 
 
