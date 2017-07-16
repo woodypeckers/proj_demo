@@ -3,13 +3,17 @@
 
 #__auth__=='__wanjl__'
 
-import unittest
-from selenium import webdriver
-import time, os
-from selenium.webdriver.support.ui import Select
+import os
 import random
+import time
+import unittest
+
+from selenium import webdriver
+from selenium.webdriver.support.ui import Select
+
 from config import *
-from bussiness_common_steps import *
+from testcases.common_logic.bussiness_common_steps import *
+
 
 class BugFreeLoginOrCondition(unittest.TestCase):
     """登录后查询或条件"""

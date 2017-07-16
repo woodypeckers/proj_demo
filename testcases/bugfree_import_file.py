@@ -1,11 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # author: samren
+import os
+import time
 import unittest
+
 from selenium import webdriver
-import os, time
-from bussiness_common_steps import *
+
 from config import *
+from testcases.common_logic.bussiness_common_steps import *
 
 
 class BugfreeImportFile(unittest.TestCase):

@@ -2,17 +2,16 @@
 # -*- coding: utf-8 -*-
 import time
 import unittest
-from testcases.bugfree_login_or_condition import BugFreeLoginOrCondition
-from testcases.bugfree_import_file import BugfreeImportFile
-from config import *
 from HTMLTestRunner import HTMLTestRunner
+from testcases.login_logout_cases.bugfree_login_or_condition import BugFreeLoginOrCondition
+from testcases.bugfree_import_file import BugfreeImportFile
 
 
 def suites():
     suite=unittest.TestSuite()
     loader=unittest.TestLoader()
-    #suite.addTests(loader.loadTestsFromTestCase(BugFreeLoginOrCondition))
-    suite.addTests(loader.loadTestsFromTestCase(BugfreeImportFile))
+    suite.addTests(loader.loadTestsFromTestCase(BugFreeLoginOrCondition))
+    #suite.addTests(loader.loadTestsFromTestCase(BugfreeImportFile))
     return suite
 
 
