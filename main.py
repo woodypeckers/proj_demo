@@ -21,7 +21,7 @@ def suites():
 if __name__ == "__main__":
     ##
     suite = suites()
-    fp = open('./report/results_%s.html' % time.strftime("%Y-%m-%d %H-%M-%S"), 'wb')
+    fp = open('./reports/results_%s.html' % time.strftime("%Y-%m-%d %H-%M-%S"), 'wb')
     runner = HTMLTestRunner(
         stream=fp,
         title=u'Bugfree功能测试报告',
