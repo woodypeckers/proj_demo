@@ -19,7 +19,7 @@ def suites():
 
 
 if __name__ == "__main__":
-    #
+    ##
     suite = suites()
     fp = open('./reports/results_%s.html' % time.strftime("%Y-%m-%d %H-%M-%S"), 'wb')
     runner = HTMLTestRunner(
